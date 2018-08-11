@@ -76,6 +76,19 @@ h3 {
   text-decoration: none;
   background: #4aaaa5;
 }
+#logo1 {
+  float: left;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+}
 
 nav {
   float: right;
@@ -124,7 +137,16 @@ h3, h2 {
   min-height: calc(100vh - 70px);
 }
 
-.main-section {
+.main-section{
+  float: left;
+  width: 100%;
+  max-width: 960px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+.main-section-2{
   float: left;
   width: 100%;
   max-width: 960px;
@@ -134,6 +156,15 @@ h3, h2 {
   border: 1px solid #ddd;
 }
 
+.main-section-1{
+  float: left;
+  width: 100%;
+  max-width: 960px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
 /* portfolio page */
 
 .work {
@@ -215,8 +246,107 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
-@media screen and (min-width: 100px) {
-  body {
-      background-color: lightblue;
+@media screen and (min-width: 980px) {
+    .container{
+    max-width:890px;
+  }
+  .main-section {
+      width: 576px;
+      margin-left:25px;
+      height:400px;
+      position:relative;
+      font-size:14px;
+      padding:10px;
+  }
+  .main-section-1{
+    width:646px;
+  }
+  .main-section-2{
+    width:600px;
+  }
+  .work:nth-child(even){
+    margin-right:20px;
+  }
+  #logo{
+    margin-left:20px;
+  }
+  #logo1{
+    margin-left:-5px;
+  }
+  .auth-image{
+  }
+  p{
+    line-height:15px;
+  }
+  footer{
+      bottom:0px;
+      width:100%;
+      position:fixed;
+  }
+}
+@media screen and (min-width: 768px) and (max-width:979px) {
+   .main-section{
+     width:740px;
+     height:384px;
+     margin-left:5px;
+     margin-right:10px;
+     padding:10px;
+   }
+   .main-section-1{
+    
+   }
+   p{
+     line-height:17px;
+   }
+   #logo{
+     margin-left:10px;
+   }
+   #logo1{
+     margin-left:15px;
+   }
+   nav{
+     margin-right:25px;
+   }
+
+}
+@media screen and (min-width: 640px) and (max-width:767px){
+  #main-container{
+    height:460px;
+  }
+  .main-section{
+    height:460px;
+  }
+  .main-section-2{
+    padding:5px;
+    height:450px;
+
+  }
+  p{
+    line-height:17px;
+  }
+  
+  #logo{
+    width:100%;
+  }
+  #logo1{
+    width:100%;
+  }
+  nav{
+    float:none;
+    text-align:center;
+  }
+  #masthead{
+    position:static;
+    overflow:hidden;
+    margin: 0 0 10px;
+  }
+  #main-container{
+    padding-top:0px;
+  }
+  .work:nth-child(even){
+    margin-right:0px;
+  }
+  .work{
+    width:560px;
   }
 }
